@@ -8,12 +8,19 @@ export class MusicPlayer {
     this.state = new StoppedState(this);
     this.previousState = null;
     this.currentTrackIndex = 0;
-    this.tracks = [
-      { title: 'Bohemian Rhapsody', artist: 'Queen', duration: '5:55' },
-      { title: 'Stairway to Heaven', artist: 'Led Zeppelin', duration: '8:02' },
-      { title: 'Hotel California', artist: 'Eagles', duration: '6:30' },
-      { title: 'Imagine', artist: 'John Lennon', duration: '3:03' },
-      { title: 'Sweet Child O Mine', artist: "Guns N' Roses", duration: '5:56' }
+     this.tracks = [
+      { 
+        title: 'Le Gustan Los Flaites', 
+        artist: 'Artista', 
+        duration: '3:45',
+        src: new URL('../assets/LeGustanLosFlaites.mp3', import.meta.url).href
+      },
+      { 
+        title: 'Never Say Never', 
+        artist: 'ft. Jaden', 
+        duration: '4:12',
+        src: new URL('../assets/NeverSayNeverft.Jaden.mp3', import.meta.url).href
+      }
     ];
   }
 
