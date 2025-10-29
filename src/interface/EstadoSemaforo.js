@@ -1,18 +1,18 @@
-// Interfaz base para todos los estados
-export class PlayerState {
-  constructor(player) {
-    this.player = player;
+// Interfaz base para todos los estados del semáforo
+export class EstadoSemaforo {
+  constructor(semaforo) {
+    this.semaforo = semaforo;
   }
 
-  play() {
+  siguiente() {
     throw new Error('Este método debe ser implementado');
   }
 
-  pause() {
+  obtenerColor() {
     throw new Error('Este método debe ser implementado');
   }
 
-  next() {
+  obtenerDuracion() {
     throw new Error('Este método debe ser implementado');
   }
 }
